@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinkly Portfolio Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>My Portfolio Dashboard</h1>
+
+  <div class="form-section">
+    <form id="entryForm">
+      <select id="category">
+        <option value="project">Project</option>
+        <option value="achievement">Achievement</option>
+        <option value="certificate">Certificate</option>
+        <option value="event">Event Attended</option>
+      </select>
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="date" id="eventDate" style="display:none;" />
+      <input type="file" id="certImage" accept="image/*" style="display:none;" />
+      <button type="submit">Add Entry</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>💻 Projects</h2>
+    <div id="projectList" class="entry-list"></div>
+
+    <h2>🏆 Achievements</h2>
+    <div id="achievementList" class="entry-list"></div>
+
+    <h2>🧾 Certificates</h2>
+    <div id="certificateList" class="entry-list"></div>
+
+    <h2>📅 Events Attended</h2>
+    <div id="eventList" class="entry-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

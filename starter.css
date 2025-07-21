@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #c8e6c9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.starter-wrapper {
+  text-align: center;
+  color: #4e54c8;
+  animation: fadeIn 2s ease;
+}
+
+.animated-title {
+  font-size: 3rem;
+  color: #4e54c8;
+  animation: pulse 2s infinite;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+input#nameInput {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4e54c8;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.enter-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+
+.enter-button:hover {
+  background-color: #26c6da;
+}
+
+.loader {
+  margin-top: 30px;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #ffca28;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
